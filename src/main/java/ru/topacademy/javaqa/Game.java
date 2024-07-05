@@ -23,10 +23,10 @@ public class Game {
         Player player2 = findByName(playerName2);
 
         if (player1 == null) {
-            throw new NotRegisteredException("Element with name: " + player1 + "not registered");
+            throw new NotRegisteredException("Element with name: " + playerName1 + "not registered");
         }
         if (player2 == null) {
-            throw new NotRegisteredException("Element with name: " + player2 + "not registered");
+            throw new NotRegisteredException("Element with name: " + playerName2 + "not registered");
         }
 
         if (player1.getStrength() > player2.getStrength()) {
