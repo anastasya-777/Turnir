@@ -11,11 +11,6 @@ import ru.topacademy.javaqa.Game;
 public class GameTest {
     Game game = new Game();
 
-    @BeforeEach
-    public void setUp() {
-        game = new Game();
-    }
-
     @Test
     public void testWinFirstPlayer() {
         Player player1 = new Player(5, "Роман", 75);
